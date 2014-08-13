@@ -1,0 +1,72 @@
+@charset "utf-8";
+html {
+	height: 100%;
+	width: 100%;
+}
+
+/* CSS Document */
+body {
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+}
+body,td,th {
+	font-family: "微软雅黑";
+	font-size: 14px;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+}
+.cls {
+	line-height: 0px;
+	margin: 0px;
+	padding: 0px;
+	height: 0px;
+	clear: both;
+	width: 100%;
+}
+
+#login {
+	height: 100%;
+	width: 100%;
+	background-attachment: fixed;
+	background-image: url(../img/1.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	-webkit-background-size: cover;/*webkit：safari and chrome*/
+	-moz-background-size: cover;/*firefox*/
+	-o-background-size: cover;/*opera*/
+	
+}
+
+#right {
+	height: 100%;
+	width: 25%;
+	min-width: 350px;
+	margin: 0px;
+	padding: 0px;
+	float: right;
+	background: rgb(255,255,255); /*The Fallback color,这里也可以使用一张图片来代替*/
+	background: rgba(255,255,255,0.5);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#FFFFFF,endColorstr=#FFFFFF)"; /*Filter for IE8 */
+
+
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#FFFFFF, endColorstr=#FFFFFF); /*Filter for older IEs */
+	text-align: center;
+}
+#logo {
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
