@@ -8,8 +8,17 @@
 
 <body>
 <div id="login">
-	<div id="right">
+	<div id="left" unselectable="on"><img id="bg" src="img/<?php echo rand(1,3);?>.jpg"></div>
+  <div id="right">
     	<div id="logo"><img src="img/aigo.png"></div>
+        <div id="login_input">
+        	<input type="text" maxlength="20">
+            <input type="password" maxlength="20">
+        </div>
+        <div id="login_submit">
+        	<button type="button">提交</button>
+        </div>
+        <div id="right_text">声明：图片来自网络</div>
     </div>
     <div class="cls"></div>
 </div>

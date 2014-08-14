@@ -9,6 +9,7 @@ body {
 	margin: 0px;
 	height: 100%;
 	width: 100%;
+	overflow: hidden;
 }
 body,td,th {
 	font-family: "微软雅黑";
@@ -26,6 +27,20 @@ a:hover {
 a:active {
 	text-decoration: none;
 }
+img {
+	margin: 0px;
+	padding: 0px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	vertical-align: middle;
+}
+
 .cls {
 	line-height: 0px;
 	margin: 0px;
@@ -38,35 +53,144 @@ a:active {
 #login {
 	height: 100%;
 	width: 100%;
-	background-attachment: fixed;
+/*	background-attachment: fixed;
 	background-image: url(../img/1.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
-	-webkit-background-size: cover;/*webkit：safari and chrome*/
-	-moz-background-size: cover;/*firefox*/
-	-o-background-size: cover;/*opera*/
-	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;*/
+}
+#left {
+	cursor: default;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	margin-right: 350px;
+	height: 100%;
+/*	background-attachment: fixed;
+	background-image: url(../img/1.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;*/
+}
+#left #bg {
+	height: 100%;
+	width: 100%;
+	z-index: -100;
+	position: relative;
+	cursor: default;
+	margin: 0px;
+	padding: 0px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+/*	-ms-user-select:none;
+	-moz-user-select: none;  
+	-webkit-user-select: none;*/
 }
 
 #right {
 	height: 100%;
-	width: 25%;
-	min-width: 350px;
+	width: 350px;
 	margin: 0px;
 	padding: 0px;
-	float: right;
 	background: rgb(255,255,255); /*The Fallback color,这里也可以使用一张图片来代替*/
 	background: rgba(255,255,255,0.5);
 	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#FFFFFF,endColorstr=#FFFFFF)"; /*Filter for IE8 */
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#FFFFFF, endColorstr=#FFFFFF); /*Filter for older IEs */
 	text-align: center;
+	position: absolute;
+	right: 0px;
+	top: 0px;
 }
 #logo {
 	margin-right: auto;
 	margin-left: auto;
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+#login_input {
+	padding-top: 100px;
+	padding-bottom: 20px;
+}
+#login_input input {
+	display: block;
+	margin-bottom: 10px;
+	width: 260px;
+	font-size: 16px;
+	padding-top: 2px;
+	padding-right: 8px;
+	padding-bottom: 2px;
+	padding-left: 8px;
+	height: 32px;
+	font-family: "微软雅黑";
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #666;
+	border-bottom-color: #666;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-color: #666;
+	border-left-color: #666;
+	margin-right: auto;
+	margin-left: auto;
+}
+#login_submit {
+	text-align: right;
+	padding-right: 37px;
+}
+#login_submit button {
+	background-color: #666;
+	color: #FFF;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+	width: 80px;
+	height: 32px;
+	border-right-color: #000;
+}
+#right_text {
+	position: absolute;
+	bottom: 0px;
+	display: block;
+	width: 100%;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
